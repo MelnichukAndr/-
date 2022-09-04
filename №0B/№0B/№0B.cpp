@@ -1,100 +1,22 @@
 ﻿// №0B.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
-using namespace std;
-
-void pointers(int* x, int* y, int* z)
-{
-    float min, max,a,b,c;
-
-    min = *x;
-    
-        if (min > *y)
-            min = *y;
-     
-        if (min > *z)
-            min = *z;
-    
-
-    max = *x;
-    
-        if (max < *y)
-            max = *y;
-        
-        if (max < *z)
-            max = *z;
-        a = *x;
-        b = *y;
-        c = *z;
-    
-    if (min == *x)
-       *x = max; 
-    else  if (min == *y)
-       *y = max;
-    else  if (min == *z)
-       *z = max;
-
-    if (max == a)
-        *x = min;
-    else  if (max == b)
-        *y = min;
-    else  if (max == c)
-        *z = min;
-     
-}
-void link(int& x, int& y, int& z)
-{
-    float min, max, a, b, c;
-
-    min = x;
-
-    if (min > y)
-        min = y;
-
-    if (min > z)
-        min = z;
 
 
-    max = x;
-
-    if (max < y)
-        max = y;
-
-    if (max < z)
-        max = z;
-    a = x;
-    b = y;
-    c = z;
-
-    if (min == x)
-        x = max;
-    else  if (min == y)
-        y = max;
-    else  if (min == z)
-        z = max;
-
-    if (max == a)
-        x = min;
-    else  if (max == b)
-        y = min;
-    else  if (max == c)
-        z = min;
-
-}
+#include "Header.h"
 int main()
 {
     int x, y, z;
     cin >> x >> y >> z;
 
-    cout << x << " " << y  << " " << z << endl;
+  
     pointers(&x, &y, &z);
     cout << x << " " << y << " " << z << endl;
 
 
     cin >> x >> y >> z;
 
-    cout << x << " " << y << " " << z << endl;
+
     link(x, y, z); 
     cout << x << " " << y << " " << z << endl;
     
