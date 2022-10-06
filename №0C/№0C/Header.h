@@ -11,3 +11,4 @@ public:
 	void PrintAllValues();
 	void CalculateSum();
 };
+void eror();

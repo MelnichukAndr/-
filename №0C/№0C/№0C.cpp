@@ -17,11 +17,7 @@ int main()
 		cin >> a >> b;
 		if (cin.fail()) {
 
-			cout << "Eror, try one more time\n";
-			cin.clear();
-			cin.ignore(32767, '\n');
-			system("pause");
-			system("cls");
+			eror();
 			continue;
 		}
 		
@@ -35,11 +31,7 @@ int main()
 		cin >> a >> b;
 		if (cin.fail()) {
 
-			cout << "Eror, try one more time\n";
-			cin.clear();
-			cin.ignore(32767, '\n');
-			system("pause");
-			system("cls");
+			eror();
 			continue;
 		}
 		SUM SecondValue(a, b);
