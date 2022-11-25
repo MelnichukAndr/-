@@ -1,4 +1,4 @@
-﻿// №0A.cpp : This file contains the 'main' function. Program execution begins and ends there.
+﻿// №0A.cpp Параметр по умолчанию 
 //
 
 #include <iostream>
@@ -23,7 +23,7 @@ int main()
     
     figure area;
     int a;
-    do {
+    while (true) {
         cout << "Square - 1\nRectangle - 2\n";
 
         cin >> a;
@@ -68,7 +68,7 @@ int main()
             continue;
         }
         cout << "Press any key to continue . . .\n";
-        puts("Press 'esc' to exit . . .");
-    } while (_getch() != 27);
+        
+    };
 }
 

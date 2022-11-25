@@ -1,18 +1,19 @@
 #include "Header.h"
-Timer::Timer(const int& sec)
+Timer::Timer(const int& sec) /*ініціалізація змінної за допомогою цілого числа(кількості секунд*/
 {
 	this->sec = sec;
 
 	cout << "constructor " << this << endl;
 
 }
-Timer::Timer(const int& sec, const int& min)
+Timer::Timer(const int& sec, const int& min)  /*за допомогою двох цілих змінних(кількість хвилин і секунд*/
 {
 	this->sec = sec + min * 60;
 	cout << "constructor " << this << endl;
 }
 
-Timer::Timer(const Timer& other) {
+Timer::Timer(const Timer& other)  /*конструктор копіювання*/
+{
 	this->sec = other.sec;
 	cout << "constructor " << this << endl;
 }

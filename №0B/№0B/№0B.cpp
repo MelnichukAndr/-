@@ -8,7 +8,7 @@ using namespace std;
 class replaceValues
 {
 public:
-	void link(int& x, int& y, int& z)
+	void link(int& x, int& y, int& z) /*Ссылки С++*/
 	{
 		float min, max, a, b, c;
 
